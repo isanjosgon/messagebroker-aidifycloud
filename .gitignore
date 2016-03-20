@@ -1,7 +1,6 @@
 .DS_Store
 
 # Logs
-*.log
 npm-debug.log*
 *.rdb
 
