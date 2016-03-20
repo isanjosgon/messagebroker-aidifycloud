@@ -1,0 +1,22 @@
+{
+  "name": "messagebroker",
+  "version": "0.1.0",
+  "description": "Message Broker service to connect asyncronously all the services in ai{D}ify cloud.",
+  "main": "app.js",
+  "engines": {
+    "node": "5.4.1"
+  },
+  "scripts": {
+    "start": "NODE_ENV=dev hotnode app.js"
+  },
+  "keywords": [
+    "message broker",
+    "broker"
+  ],
+  "author": "Isra San Jose Gonzalez",
+  "license": "MIT",
+  "dependencies": {
+    "log4js": "0.6.33",
+    "redis": "2.5.2"
+  }
+}
