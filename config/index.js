@@ -3,8 +3,15 @@
 
 'use strict'
 
+const config = require('../package.json');
+
 module.exports = {
   environment : process.env.NODE_ENV || 'dev',
+  restapi : {
+    port : process.env.PORT || 5002,
+    name : config.name,
+    version : config.version
+  },
   logging : {
     appenders: [{
       type: 'file',

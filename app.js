@@ -5,6 +5,11 @@
 
 const config = require('./config');
 const Logger = require('./interface/logger');
+
+const Server = require('./restapi/server');
 const Broker = require('./messagebroker/broker');
 
-new Broker(new Logger(config.logging));
+let logger = new Logger(config.logging);
+
+new Server(config.restapi,logger);
+new Broker(logger);
